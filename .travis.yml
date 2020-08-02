@@ -1,3 +1,17 @@
 language: node_js
 node_js:
   - 12
+install:
+  - npm install
+script:
+  - npm build
+deploy:
+  provider: pages
+  local_dir: /dist
+  target_branch: master
+  on:
+    branch: master
+    github_token: $GITHUB_TOKEN
+    skip_cleanup: true
+    keep_history: true
+    committer_from_gh: true
