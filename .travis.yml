@@ -8,7 +8,7 @@ script:
   - npm run build
 deploy:
   provider: pages
-  local_dir: /dist
+  local_dir: dist
   target_branch: master
   on:
     branch: master
