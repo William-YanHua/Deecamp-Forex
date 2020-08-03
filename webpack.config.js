@@ -54,7 +54,7 @@ const devPlugins = [
 
 const prodPlugins = [
   new webpack.DefinePlugin({
-    APIROOTURL: JSON.stringify("http://49.234.112.118:5000/api/"),
+    APIROOTURL: JSON.stringify("http://49.234.112.218:5000/api/"),
   }),
 ];
 
